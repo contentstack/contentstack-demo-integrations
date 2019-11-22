@@ -1,0 +1,25 @@
+{
+  "name": "contentstack-auto-publish",
+  "version": "1.0.0",
+  "description": "Contentstack auto publish AWS lambda function can be used to do auto publishing content on entry save or update to desired environments",
+  "main": "index.js",
+  "author": "kevalgohil@hotmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "request": "2.88.0",
+    "request-promise": "4.2.4"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint index.js --fix",
+    "build": "rm -rf node_modules index.zip && npm install --production && zip -r index.zip *"
+  },
+  "devDependencies": {
+    "dotenv": "8.1.0",
+    "eslint": "6.5.1",
+    "eslint-config-standard": "14.1.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-node": "10.0.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1"
+  }
+}
