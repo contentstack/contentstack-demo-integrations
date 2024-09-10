@@ -6,7 +6,7 @@
   "author": "kevalgohil@hotmail.com",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "2.482.0",
+    "aws-sdk": "2.814.0",
     "request": "2.88.0",
     "request-promise": "4.2.4"
   },
