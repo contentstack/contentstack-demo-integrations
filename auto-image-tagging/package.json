@@ -8,11 +8,14 @@
   "dependencies": {
     "aws-sdk": "2.482.0",
     "request": "2.88.0",
-    "request-promise": "4.2.4"
+    "request-promise": "4.2.4",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "lint": "npm install && ./node_modules/.bin/eslint index.js lib/*.js --fix",
-    "build": "rm -rf node_modules index.zip && npm install --production && zip -r index.zip *"
+    "build": "rm -rf node_modules index.zip && npm install --production && zip -r index.zip *",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "dotenv": "8.1.0",
@@ -22,5 +25,6 @@
     "eslint-plugin-node": "10.0.0",
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-standard": "4.0.1"
-  }
+  },
+  "snyk": true
 }
